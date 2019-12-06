@@ -1,0 +1,36 @@
+.logo__link {
+  display: flex;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 16px;
+}
+
+.logo__title {
+  @include font(25px, 29px, $font-roboto-bold, $white);
+}
+
+.logo__title--darker {
+  color: $black-2;
+}
+
+.logo__subtitle {
+  @include font(12px, 14px, $font-roboto-medium, $grey-1);
+}
+
+.logo__subtitle--darker {
+  color: $grey-2;
+}
+
+footer .logo__subtitle {
+  color: $grey-3;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .logo__text {
+    display: none;
+  }
+}

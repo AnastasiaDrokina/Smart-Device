@@ -1,0 +1,37 @@
+.footer {
+  padding: 65px 0 0 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  @include list-reset;
+}
+
+.footer__title {
+  @include font(15px, 16px, $font-roboto-bold, $black-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 28px 0;
+}
+
+.footer__text {
+  @include font(15px, 25px, $font-PTMono, $black-3);
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright-text {
+  @include font(13px, 24px, $font-PTMono, $black-3);
+}

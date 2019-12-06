@@ -1,0 +1,40 @@
+.advantages__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  width: 50%;
+  min-height: 300px;
+  padding: 40px 44px 42px 44px;
+  border: 1px solid #ebebeb;
+}
+
+.advantages__link {
+  color: $brown;
+}
+
+.advantages__title {
+  @include font(24px, 34px, $font-roboto-regular, $blue);
+}
+
+.advantages__content {
+  line-height: 22px;
+}
+
+.advantages__icon-stopwatch {
+  width: 29px;
+  height: 35px;
+}
+
+.advantages__icon-hired,
+.advantages__icon-tag {
+  width: 35px;
+  height: 35px;
+}
+
+.advantages__icon-detective {
+  width: 36px;
+  height: 31px;
+}

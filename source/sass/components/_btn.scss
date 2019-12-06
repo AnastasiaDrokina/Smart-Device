@@ -1,0 +1,24 @@
+.btn {
+  @include button-reset;
+  @include font(14px, 16px, $font-roboto-bold, $white);
+  min-width: 180px;
+  min-height: 45px;
+  padding: 14px 12px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.btn--outline {
+  margin: 0 0 0 38px;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .btn--outline {
+    display: none;
+  }
+}
