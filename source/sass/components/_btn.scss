@@ -10,10 +10,21 @@
   text-align: center;
   letter-spacing: 0.05em;
   cursor: pointer;
+  background: transparent;
 }
 
 .btn--outline {
   margin: 0 0 0 38px;
+}
+
+.btn--more {
+  color: $blue;
+  border-color: $blue;
+}
+.btn--question {
+  min-width: 270px;
+  min-height: 45px;
+  padding: 14px 18px;
 }
 
 /* Tablet */

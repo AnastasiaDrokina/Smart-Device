@@ -45,42 +45,68 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <a class="advantages__link" href="#">
-              <svg class="advantages__icon advantages__icon-stopwatch">
-                <use xlink:href="#icon-stopwatch"></use>
-              </svg>
-              <h3 class="advantages__title">Оперативные сроки </h3>
-              <p class="advantages__content">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-            </a>
+            <svg class="advantages__icon advantages__icon-stopwatch">
+              <use xlink:href="#icon-stopwatch-blue"></use>
+            </svg>
+            <h3 class="advantages__title">Оперативные сроки </h3>
+            <p class="advantages__content">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
           <li class="advantages__item">
-            <a class="advantages__link" href="#">
-              <svg class="advantages__icon advantages__icon-hired">
-                <use xlink:href="#icon-hired"></use>
-              </svg>
-              <h3 class="advantages__title">Крупные поставщики</h3>
-              <p class="advantages__content">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-            </a>
+            <svg class="advantages__icon advantages__icon-hired">
+              <use xlink:href="#icon-hired"></use>
+            </svg>
+            <h3 class="advantages__title">Крупные поставщики</h3>
+            <p class="advantages__content">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </li>
           <li class="advantages__item">
-            <a class="advantages__link" href="#">
-              <svg class="advantages__icon advantages__icon-detective">
-                <use xlink:href="#icon-detective"></use>
-              </svg>
-              <h3 class="advantages__title">Полная конфиденциальность</h3>
-              <p class="advantages__content">По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
-            </a>
+            <svg class="advantages__icon advantages__icon-detective">
+              <use xlink:href="#icon-detective"></use>
+            </svg>
+            <h3 class="advantages__title">Полная конфиденциальность</h3>
+            <p class="advantages__content">По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
           </li>
           <li class="advantages__item">
-            <a class="advantages__link" href="#">
-              <svg class="advantages__icon advantages__icon-tag">
-                <use xlink:href="#icon-tag"></use>
-              </svg>
-              <h3 class="advantages__title">Персонализация стоимости</h3>
-              <p class="advantages__content">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-            </a>
+            <svg class="advantages__icon advantages__icon-tag">
+              <use xlink:href="#icon-tag"></use>
+            </svg>
+            <h3 class="advantages__title">Персонализация стоимости</h3>
+            <p class="advantages__content">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
           </li>
         </ul>
+    </div>
+  </section>
+  <section class="info">
+    <div class="container">
+      <h2 class="info__title">О компании</h2>
+      <p class="info__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+      <p class="info__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+      <button class="btn  btn--more" type="button">Подробнее</button>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
+      <a class="services__link" href="#"> Производство печатных плат</a>
+      <a class="services__link" href="#">Монтаж печатных плат</a>
+      <a class="services__link" href="#">Комплектующие для светотехники</a>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <h2 class="contacts__title">Остались вопросы? Задайте их нам!</h2>
+      <p class="contacts__text">Мы проконсультируем Вас бесплатно</p>
+      <form class="form" action="" method="GET">
+        <div class="contacts__name  form__fild">
+          <input type="text" name="name" placeholder="Имя">
+        </div>
+       <div class="contacts__phone  form__fild">
+          <input type="tel" name="phone" placeholder="Телефон">
+       </div>
+        <div class="contacts__message  form__fild">
+          <textarea type="text" name="message" placeholder="Ваш вопрос">
+        </div>
+        <button class="btn  btn--question" type="submit">Задать вопрос</button>
+      </form>
     </div>
   </section>
   <footer class="footer">
@@ -120,7 +146,7 @@
         </div>
         <div class="column__services">
           <p class="footer__title">Разделы сайта</p>
-          <ul сlass="footer__list  test">
+          <ul сlass="footer__list">
             <li сlass="footer__item">
               <a class="footer__link  footer__text" href="#">О компании</a>
             </li>

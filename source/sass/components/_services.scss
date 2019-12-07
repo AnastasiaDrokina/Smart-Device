@@ -1,0 +1,10 @@
+.services {
+  background-color: $black-3;
+}
+.services__title {
+  @include font(36px, 51px, $font-roboto-regular, $white);
+}
+.services__link {
+  @include font(20px, 30px, $font-roboto-regular, $white);
+  background-image: url("");
+}
