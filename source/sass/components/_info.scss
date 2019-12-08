@@ -1,11 +1,16 @@
 .info {
   padding: 90px 0 96px 0;
-  background-image: url("img/year-desktop@1x");
+}
+
+.info__container {
+  padding-left: 200px;
+  background: url("../img/year-desktop@1x.png") left center no-repeat transparent;
+  background-size: 220px 317px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .info {
-    background-image: url("img/year-desktop@2x");
+  .info__container {
+    background-image: url("../img/year-desktop@2x.png");
   }
 }
 
@@ -21,18 +26,28 @@
 }
 
 /* Tablet */
-@media (max-width: 1023px) {
+@media (max-width: $tablet) {
   .info {
     padding: 30px 0 0 0;
   }
+
   .info__description {
     margin-bottom: 34px;
+  }
+
+  .info__title {
+    font-size: 32px;
   }
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: $mobile) {
   .info {
     padding: 60px 0 0 0;
+  }
+
+  .info__container {
+    background: none;
+    padding-left: 15px;
   }
 }

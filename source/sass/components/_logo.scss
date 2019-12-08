@@ -29,7 +29,7 @@ footer .logo__subtitle {
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: $mobile) {
   .logo__text {
     display: none;
   }

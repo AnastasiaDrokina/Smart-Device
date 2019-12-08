@@ -2,3 +2,7 @@
   width: 26px;
   height: 26px;
 }
+
+.social__list {
+  @include list-reset;
+}

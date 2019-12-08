@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,7 +76,7 @@
     </div>
   </section>
   <section class="info">
-    <div class="container">
+    <div class="container  info__container">
       <h2 class="info__title">О компании</h2>
       <p class="info__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
       <p class="info__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
@@ -84,24 +84,26 @@
     </div>
   </section>
   <section class="services">
-    <div class="container">
+    <div class="container  services__container">
       <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
-      <a class="services__link" href="#"> Производство печатных плат</a>
-      <a class="services__link" href="#">Монтаж печатных плат</a>
-      <a class="services__link" href="#">Комплектующие для светотехники</a>
+      <div class="services__items">
+        <a class="services__link  services__link-production" href="#">Производство <br> печатных плат</a>
+        <a class="services__link  services__link-installation" href="#">Монтаж печатных <br> плат</a>
+        <a class="services__link  services__link-accessories" href="#">Комплектующие <br> для светотехники</a>
+      </div>
     </div>
   </section>
   <section class="contacts">
-    <div class="container">
+    <div class="container  contacts__container">
       <h2 class="contacts__title">Остались вопросы? Задайте их нам!</h2>
       <p class="contacts__text">Мы проконсультируем Вас бесплатно</p>
       <form class="form" action="" method="GET">
         <div class="contacts__name  form__fild">
           <input type="text" name="name" placeholder="Имя">
         </div>
-       <div class="contacts__phone  form__fild">
+        <div class="contacts__phone  form__fild">
           <input type="tel" name="phone" placeholder="Телефон">
-       </div>
+        </div>
         <div class="contacts__message  form__fild">
           <textarea type="text" name="message" placeholder="Ваш вопрос">
         </div>
@@ -146,7 +148,7 @@
         </div>
         <div class="column__services">
           <p class="footer__title">Разделы сайта</p>
-          <ul сlass="footer__list">
+          <ul class="footer__list">
             <li сlass="footer__item">
               <a class="footer__link  footer__text" href="#">О компании</a>
             </li>
@@ -172,7 +174,7 @@
         </div>
         <div class="column__contacts">
           <p class="footer__title">Наш офис</p>
-          <ul сlass="footer__list">
+          <ul class="footer__list">
             <li сlass="footer__item  footer__text">г. Мытищи, Олимпийский проспект, д.10</li>
             <li сlass="footer__item  footer__text">+7 (495) 589-40-50</li>
             <li сlass="footer__item  footer__text">+7 (925) 003-87-67</li>

@@ -2,13 +2,30 @@
   background-color: $blue;
   padding: 96px 0 118px;
 }
+
+.contacts__container {
+  padding-left: 640px;
+  background: url("../img/paper-airplane-desktop@1x.png") left center no-repeat transparent;
+  height: 288px;
+}
+
 .contacts__title {
   margin: 0;
+
   @include font(36px, 51px, $font-roboto-regular, $white);
 }
+
 .contacts p {
   color: $white;
 }
+
 .contacts__form input {
   background-color: $blue;
+}
+
+/* Tablet */
+@media (max-width: $tablet) {
+  .contacts__container {
+    background: none;
+  }
 }

@@ -25,6 +25,7 @@
 
 .footer__text {
   @include font(15px, 25px, $font-PTMono, $black-3);
+  opacity: 0.5;
 }
 
 .footer__copyright {
@@ -34,4 +35,5 @@
 
 .footer__copyright-text {
   @include font(13px, 24px, $font-PTMono, $black-3);
+  opacity: 0.5;
 }

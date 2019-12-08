@@ -42,10 +42,11 @@
 .header__envelope,
 .header__phone-call {
   vertical-align: middle;
+  fill: $blue;
 }
 
 /* Tablet */
-@media (max-width: 1023px) {
+@media (max-width: $tablet) {
   .header__item {
     margin-right: 0;
   }
@@ -67,7 +68,7 @@
   }
 }
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: $mobile) {
   .header__envelope {
     margin-right: 23px;
   }

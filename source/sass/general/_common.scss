@@ -37,3 +37,7 @@ img {
   height: auto;
   vertical-align: middle;
 }
+
+svg path {
+  fill: inherit;
+}
