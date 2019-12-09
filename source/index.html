@@ -40,6 +40,22 @@
       </ul>
     </div>
   </header>
+  <section class="banner">
+    <div class="container  banner__container">
+      <div class="banner__content">
+        <h1 class="banner__title">Печатные платы</h1>
+        <p class="banner__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <button class="btn  btn--blue" type="button">Получить бесплатную консультацию</button>
+      </div>
+      <div class="banner__wrapper">
+        <img src="img/banner-desktop@1x.png" width="705" height="515"
+        srcset="img/banner-desktop@1x.png 1x img/banner-desktop@2x.png 2x"
+        srcset="img/banner-tablet@1x.png 1x img/banner-tablet@2x.png 2x"
+        srcset="img/banner-mobile@1x.png 1x img/banner-mobile@2x.png 2x"
+        alt="Печатные платы">
+      </div>
+    </div>
+  </section>
   <section class="advantages">
     <div class="container">
       <h2 class="visually-hidden">Наши преимущества</h2>
@@ -80,7 +96,7 @@
       <h2 class="info__title">О компании</h2>
       <p class="info__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
       <p class="info__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-      <button class="btn  btn--more" type="button">Подробнее</button>
+      <button class="btn  btn--white" type="button">Подробнее</button>
     </div>
   </section>
   <section class="services">
@@ -98,16 +114,25 @@
       <h2 class="contacts__title">Остались вопросы? Задайте их нам!</h2>
       <p class="contacts__text">Мы проконсультируем Вас бесплатно</p>
       <form class="form" action="" method="GET">
-        <div class="contacts__name  form__fild">
-          <input type="text" name="name" placeholder="Имя">
+        <div class="contacts__name  form__field">
+          <input type="text" name="name-field" id="name" placeholder="Имя">
+          <label class="visually-hidden" for="name">Имя</label>
         </div>
-        <div class="contacts__phone  form__fild">
-          <input type="tel" name="phone" placeholder="Телефон">
+        <div class="contacts__phone  form__field">
+          <input type="tel" name="phone-field" id="phone" placeholder="Телефон">
+          <label class="visually-hidden" for="phone">Телефон</label>
         </div>
-        <div class="contacts__message  form__fild">
-          <textarea type="text" name="message" placeholder="Ваш вопрос">
+        <div class="contacts__message  form__field">
+          <textarea type="text" name="message-field" id="message" placeholder="Ваш вопрос"></textarea>
+          <label class="visually-hidden" for="message">Ваш вопрос</label>
         </div>
-        <button class="btn  btn--question" type="submit">Задать вопрос</button>
+        <div class="contacts__confidentiality">
+          <button class="btn  btn--question" type="submit">Задать вопрос</button>
+          <div class="form__field-confidentiality">
+            <input class="visually-hidden" type="checkbox" name="confidentiality-field" id="confidentiality" checked>
+            <label for="confidentiality-field">Я согласен на обработку  персональных данных</label>
+          </div>
+        </div>
       </form>
     </div>
   </section>

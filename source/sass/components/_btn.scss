@@ -17,7 +17,7 @@
   margin: 0 0 0 38px;
 }
 
-.btn--more {
+.btn--white {
   color: $blue;
   border-color: $blue;
 }
@@ -28,9 +28,28 @@
   padding: 14px 18px;
 }
 
+.btn--blue {
+  background-color: $blue;
+  padding: 18px 45px;
+  margin-left: 92px;
+  border-color: transparent;
+}
+
 /* Tablet */
 @media (max-width: $tablet) {
   .btn--outline {
     display: none;
+  }
+
+  .btn--blue {
+    padding: 14px 17px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: $mobile) {
+  .btn--blue {
+    padding: 11px 17px;
   }
 }

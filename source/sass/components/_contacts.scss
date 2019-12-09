@@ -3,8 +3,12 @@
   padding: 96px 0 118px;
 }
 
+.contacts__confidentiality {
+  display: flex;
+}
+
 .contacts__container {
-  padding-left: 640px;
+  padding-left: 720px;
   background: url("../img/paper-airplane-desktop@1x.png") left center no-repeat transparent;
   height: 288px;
 }
