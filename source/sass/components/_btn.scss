@@ -28,11 +28,23 @@
   padding: 14px 18px;
 }
 
+.btn--submit {
+  width: 100%;
+}
+
 .btn--blue {
   background-color: $blue;
   padding: 18px 45px;
   margin-left: 92px;
   border-color: transparent;
+}
+
+.btn-text-mobile {
+  display: none;
+}
+
+.btn-text-desktop {
+  display: block;
 }
 
 /* Tablet */
@@ -42,7 +54,10 @@
   }
 
   .btn--blue {
-    padding: 14px 17px;
+    min-width: 379px;
+    padding: 14px 33px;
+    margin-right: 0;
+    margin-left: 44px;
   }
 }
 
@@ -50,6 +65,18 @@
 /* Mobile */
 @media (max-width: $mobile) {
   .btn--blue {
-    padding: 11px 17px;
+    min-width: 287px;
+    padding: 11px 22px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+  .btn-text-mobile {
+    display: block;
+  }
+
+  .btn-text-desktop {
+    display: none;
   }
 }

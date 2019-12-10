@@ -1,0 +1,26 @@
+/* Tablet */
+@media (max-width: $tablet) {
+  .column__social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.5);
+    margin: 0 -15px;
+    padding: 10px 15px 26px 10px;
+    flex: 1 1 100%;
+  }
+
+  .column__services,
+  .column__contacts {
+    padding-top: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+  .column__social {
+    flex-direction: column;
+    padding: 46px 0 54px 0;
+  }
+}

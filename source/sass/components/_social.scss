@@ -1,8 +1,38 @@
 .social__icon {
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
+  background: center no-repeat transparent;
 }
 
 .social__list {
   @include list-reset;
+  display: flex;
+}
+
+.social__item {
+  margin-top: 53px;
+
+  & + & {
+    margin-left: 16px;
+  }
+}
+
+.social__facebook {
+  background-image: url("../img/icone-facebook.svg");
+}
+
+.social__ok {
+  background-image: url("../img/icone-ok.svg");
+}
+
+.social__vk {
+  background-image: url("../img/icone-vk.svg");
+}
+
+
+/* Tablet */
+@media (max-width: $tablet) {
+  .social__item {
+    margin-top: 0;
+  }
 }

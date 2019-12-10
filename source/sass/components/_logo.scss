@@ -33,4 +33,9 @@ footer .logo__subtitle {
   .logo__text {
     display: none;
   }
+
+  .logo__text--footer {
+    display: block;
+    max-width: 170px;
+  }
 }

@@ -16,6 +16,11 @@
   }
 }
 
+.form__field textarea {
+  width: 100%;
+  min-height: 154px;
+}
+
 .form__field-confidentiality::before {
   content: "";
   display: block;
@@ -23,4 +28,15 @@
   width: 16px;
   height: 16px;
   border: 1px solid $white;
+}
+
+/* Modal */
+.form__field {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form__field-confidentiality {
+  font-size: 14px;
+  line-height: 16px;
 }

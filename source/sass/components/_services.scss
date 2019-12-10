@@ -135,6 +135,10 @@
 }
 /* Mobile */
 @media (max-width: $mobile) {
+  .services {
+    padding: 53px 0 64px;
+  }
+
   .services__link {
     & + & {
       margin-top: 30px;
