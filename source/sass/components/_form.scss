@@ -20,23 +20,63 @@
   width: 100%;
   min-height: 154px;
 }
+.form__field-confidentiality label {
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+}
 
-.form__field-confidentiality::before {
+.form__field-confidentiality label::before {
   content: "";
   display: block;
   position: absolute;
   width: 16px;
   height: 16px;
   border: 1px solid $white;
+  top: 0;
+  left: 0;
+}
+
+.form__field-confidentiality label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/icon-vector-down.svg") center no-repeat transparent;
+  width: 8px;
+  height: 5px;
+  top: 4px;
+  left: 4px;
+}
+
+/* Tablet */
+@media (max-width: $tablet) {
+  .form__field input {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+  .form__field input {
+    margin-bottom: 30px;
+  }
+  .form__field-confidentiality {
+    margin: 30px 0 0 0;
+  }
 }
 
 /* Modal */
-.form__field {
+.modal .form__field {
   font-size: 16px;
   line-height: 22px;
 }
 
-.form__field-confidentiality {
+.modal .form__field-confidentiality {
   font-size: 14px;
   line-height: 16px;
+  margin-top: 30px;
+}
+
+.modal .form__field input {
+  width: 100%;
 }

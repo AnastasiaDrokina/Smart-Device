@@ -6,10 +6,7 @@
 }
 
 .contacts__container {
-  background: url("../img/paper-airplane-desktop@1x.png") left top no-repeat transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: url("../img/paper-airplane-desktop@1x.png") left 170px center no-repeat transparent;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -26,11 +23,12 @@
 .contacts__wrapper form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contacts__name,
 .contacts__phone {
-  width: 50%;
+  width: calc(50% - 15px);
   margin: 49px 0 40px;
 }
 
@@ -41,12 +39,12 @@
 
 .contacts__confidentiality {
   display: flex;
+  align-items: center;
 }
 
 .contacts__confidentiality label {
   color: $white;
 }
-
 
 .contacts__title {
   margin: 0;
@@ -62,7 +60,47 @@
   background-color: $blue;
 }
 
+/* Tablet */
+@media (max-width: $tablet) {
+  .contacts__container {
+    background: none;
+  }
+  .contacts__wrapper {
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+  .contacts {
+    padding: 33px 0 41px;
+  }
+  .contacts__wrapper form {
+    flex-direction: column;
+  }
+  .contacts__name,
+  .contacts__phone {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contacts__name {
+    margin-top: 40px;
+  }
+
+  .contacts__confidentiality {
+    flex-direction: column;
+  }
+
+  .contacts__message {
+    margin-bottom: 30px;
+  }
+}
 /* Modal */
+.modal, .contacts {
+  padding: 30px 40px;
+}
 .modal .contacts__title {
   font-size: 28px;
   line-height: 140.62%;
@@ -71,18 +109,15 @@
 .modal .contacts__text {
   font-size: 16px;
   line-height: 22px;
+  margin: 21px 0 35px 0;
 }
 
-/* Tablet */
-@media (max-width: $tablet) {
-  .contacts__container {
-    background: none;
-  }
+.modal .contacts__confidentiality {
+  flex-direction: column;
 }
 
-/* Mobile */
-@media (max-width: $mobile) {
-  .contacts__wrapper form {
-    flex-direction: column;
-  }
+.modal .contacts__name,
+.modal .contacts__phone {
+  width: 100%;
+  margin: 0 0 30px 0;
 }

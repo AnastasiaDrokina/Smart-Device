@@ -1,4 +1,26 @@
 .modal {
   width: 490px;
   height: 605px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -245px;
+  z-index: 15;
+  margin-top: 136px;
+}
+
+.modal__close-btn {
+  background: url("../img/icon-close.svg") top right no-repeat transparent;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0;
+}
+
+.modal--close {
+  display: none;
 }
