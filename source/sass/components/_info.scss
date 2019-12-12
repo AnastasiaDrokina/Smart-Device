@@ -14,12 +14,12 @@
   }
 }
 
-.info__title {
+.info h2 {
   @include font(36px, 51px, $font-roboto-regular, $brown);
   margin: 0 0 18px 0;
 }
 
-.info__description {
+.info p {
   line-height: 22px;
   margin-bottom: 50px;
   text-overflow: ellipsis;
@@ -31,11 +31,11 @@
     padding: 60px 0 45px 0;
   }
 
-  .info__description {
+  .info p {
     margin-bottom: 34px;
   }
 
-  .info__title {
+  .info h2 {
     font-size: 32px;
   }
 }

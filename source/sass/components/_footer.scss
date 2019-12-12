@@ -32,9 +32,9 @@
 
 .footer__title {
   @include font(15px, 16px, $font-roboto-bold, $black-3);
+  margin: 0 0 28px 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin: 0 0 28px 0;
 }
 
 .footer__text {
@@ -45,6 +45,11 @@
   display: none;
 }
 
+.footer__copyright  .footer__company {
+  display: block;
+  margin: 1em 0 1em;
+}
+
 .footer__copyright {
   border-top: 1px solid rgba(98, 105, 98, 0.5);
   margin-top: 16px;
@@ -53,6 +58,14 @@
 .footer__copyright-text {
   @include font(13px, 24px, $font-PTMono, $black-3);
   opacity: 0.5;
+}
+
+.footer__list li {
+  margin-right: 65px;
+}
+
+.footer__btn {
+  display: none;
 }
 
 /* Tablet */
@@ -68,6 +81,10 @@
   .footer__company {
     display: block;
     margin: 26px 0 31px;
+  }
+
+  .footer__copyright  .footer__company {
+    display: none;
   }
 
   .column__services .footer__list {
@@ -91,5 +108,29 @@
 
   .footer__company {
     margin: 26px 0 31px;
+  }
+
+  .footer__btn {
+    @include button-reset;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-plus.svg") center no-repeat transparent;
+    cursor: pointer;
+  }
+
+  .footer__btn--opened {
+    background-image: url("../img/icon-minus.svg");
+  }
+
+  .footer__list {
+    display: none;
+  }
+
+  .footer__list--opened {
+    display: block;
   }
 }

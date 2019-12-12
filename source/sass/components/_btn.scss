@@ -4,12 +4,12 @@
   min-width: 180px;
   min-height: 45px;
   padding: 14px 12px;
-  border: 1px solid $white;
-  border-radius: 5px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.05em;
   cursor: pointer;
+  border: 1px solid $white;
+  border-radius: 5px;
   background: transparent;
 }
 
@@ -34,18 +34,10 @@
 }
 
 .btn--blue {
-  background-color: $blue;
   padding: 18px 45px;
   margin-left: 92px;
+  background-color: $blue;
   border-color: transparent;
-}
-
-.btn-text-mobile {
-  display: none;
-}
-
-.btn-text-desktop {
-  display: block;
 }
 
 /* Tablet */
@@ -66,18 +58,10 @@
 /* Mobile */
 @media (max-width: $mobile) {
   .btn--blue {
+    display: block;
     min-width: 287px;
     padding: 11px 22px;
     margin-right: auto;
     margin-left: auto;
-    display: block;
-  }
-
-  .btn-text-mobile {
-    display: block;
-  }
-
-  .btn-text-desktop {
-    display: none;
   }
 }
