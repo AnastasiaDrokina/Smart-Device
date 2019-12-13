@@ -21,6 +21,10 @@
   justify-content: space-between;
 }
 
+.footer__text {
+  color: $black;
+}
+
 .footer__list {
   @include list-reset;
   opacity: 0.5;
@@ -52,7 +56,6 @@
 
 .footer__copyright {
   border-top: 1px solid rgba(98, 105, 98, 0.5);
-  margin-top: 16px;
 }
 
 .footer__copyright-text {
@@ -98,6 +101,10 @@
     text-align: center;
   }
 
+  .footer__container {
+    padding-bottom: 0;
+  }
+
   .footer__rights {
     display: none;
   }
@@ -120,6 +127,10 @@
     height: 30px;
     background: url("../img/icon-plus.svg") center no-repeat transparent;
     cursor: pointer;
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
   }
 
   .footer__btn--opened {

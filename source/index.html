@@ -25,15 +25,15 @@
           <ul class="header__list">
             <li class="header__item">
               <svg class="header__envelope">
-                <use xlink:href="#icon-envelope"></use>
+                <use xlink:href="#icon-envelope" />
               </svg>
               <a class="header__link" href="mailto:info@sd.ru">info@sd.ru</a>
             </li>
             <li class="header__item">
               <svg class="header__phone-call">
-                <use xlink:href="#icon-phone-call"></use>
+                <use xlink:href="#icon-phone-call" />
               </svg>
-              <a class="header__link" href="tel:+7 (495) 000 52 52">+7 (495) 000 52 52</a>
+              <a class="header__link" href="tel:+7(495)0005252">+7 (495) 000 52 52</a>
             </li>
             <li class="header__item">
               <button class="btn  btn--outline  header__btn" type="button">Заказать звонок</button>
@@ -45,11 +45,21 @@
       <div class="container  banner__container">
         <div class="banner__wrapper">
           <!-- desktop 1х: 705px; 2x: 2400px -->
-            <img src="img/banner-desktop@1x.png" width="705" height="515"
-            srcset="img/banner-desktop@1x.png 1x img/banner-desktop@2x.png 2x"
-            srcset="img/banner-tablet@1x.png 1x img/banner-tablet@2x.png 2x"
-            srcset="img/banner-mobile@1x.png 1x img/banner-mobile@2x.png 2x"
-            alt="Печатные платы">
+          <img srcset="
+          img/banner-desktop@1x.png 705w,
+          img/banner-desktop@2x.png 1410w,
+          img/banner-tablet@1x.png 260w,
+          img/banner-tablet@2x.png 520w,
+          img/banner-mobile@1x.png 294w,
+          img/banner-mobile@2x.png 588w"
+          sizes="
+          (max-width: 767px) 301px,
+          (max-width: 1024px) 465px,
+          705px "
+          src="img/banner-desktop@1x.png"
+          width="705"
+          height="515"
+          alt="Печатные платы">
         </div>
         <div class="banner__content">
           <h1>Печатные <span>платы</span></h1>
@@ -67,28 +77,28 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <svg class="advantages__icon advantages__icon-stopwatch">
-              <use xlink:href="#icon-stopwatch-blue"></use>
+              <use xlink:href="#icon-stopwatch-blue" />
             </svg>
             <h3>Оперативные сроки </h3>
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
           <li class="advantages__item">
             <svg class="advantages__icon advantages__icon-hired">
-              <use xlink:href="#icon-hired"></use>
+              <use xlink:href="#icon-hired" />
             </svg>
             <h3>Крупные поставщики</h3>
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </li>
           <li class="advantages__item">
             <svg class="advantages__icon advantages__icon-detective">
-              <use xlink:href="#icon-detective"></use>
+              <use xlink:href="#icon-detective" />
             </svg>
             <h3>Полная конфиденциальность</h3>
             <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
           </li>
           <li class="advantages__item">
             <svg class="advantages__icon advantages__icon-tag">
-              <use xlink:href="#icon-tag"></use>
+              <use xlink:href="#icon-tag" />
             </svg>
             <h3>Персонализация стоимости</h3>
             <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
@@ -100,7 +110,7 @@
     <div class="container  info__container">
       <h2>О компании</h2>
       <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-      <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+      <p class="info__p">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span class="info__hidden">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
       <button class="btn  btn--white" type="button">Подробнее</button>
     </div>
   </section>
@@ -129,7 +139,7 @@
             <label class="visually-hidden" for="phone">Телефон</label>
           </div>
           <div class="contacts__message  form__field">
-            <textarea type="text" name="message-field" id="message" placeholder="Ваш вопрос"></textarea>
+            <textarea name="message-field" id="message" placeholder="Ваш вопрос"></textarea>
             <label class="visually-hidden" for="message">Ваш вопрос</label>
           </div>
           <div class="contacts__confidentiality">
@@ -151,7 +161,7 @@
             <img src="img/icon-logo.svg" width="52" height="52" alt="Логотип Smart Device">
             <div class="logo__text  logo__text--footer">
               <span class="logo__title  logo__title--darker">Smart Device</span>
-              <span class="logo__subtitle">умные <span class="logo__subtitle">технологии</span>
+              <span class="logo__subtitle">умные <span class="logo__subtitle">технологии</span></span>
             </div>
           </a>
           <p class="footer__copyright-text  footer__company">1999-2018 SD Service Devices</p>
@@ -159,21 +169,21 @@
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Мы в Facebook">
                 <svg class="social__facebook  social__icon">
-                  <use xlink:href="#icon-facebook"></use>
+                  <use xlink:href="#icon-facebook" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Мы в Одноклассниках">
                 <svg class="social__ok  social__icon">
-                  <use xlink:href="#icon-ok"></use>
+                  <use xlink:href="#icon-ok" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Мы в контакте ">
                 <svg class="social__vk  social__icon">
-                  <use xlink:href="#icon-vk"></use>
+                  <use xlink:href="#icon-vk" />
                 </svg>
               </a>
             </li>
@@ -183,25 +193,25 @@
           <p class="footer__title">Разделы сайта</p>
           <button class="footer__btn" type="button"><span class="visually-hidden">Развернуть</span></button>
           <ul class="footer__list">
-            <li сlass="footer__item">
+            <li class="footer__item">
               <a class="footer__link  footer__text" href="#">О компании</a>
             </li>
-            <li сlass="footer__item">
+            <li class="footer__item">
               <a class="footer__link  footer__text" href="#">Продукты</a>
             </li>
-            <li сlass="footer__item">
+            <li class="footer__item">
               <a class="footer__link  footer__text" href="#">Производство печатных плат</a>
             </li>
-            <li сlass="footer__item">
+            <li class="footer__item">
               <a class="footer__link  footer__text" href="#">Монтаж печатных плат</a>
             </li>
-            <li сlass="footer__item">
+            <li class="footer__item">
               <a class="footer__link  footer__text" href="#">Комплектующие</a>
             </li>
-            <li сlass="footer__item">
+            <li class="footer__item">
               <a class="footer__link  footer__text" href="#">Доставка</a>
             </li>
-            <li сlass="footer__item">
+            <li class="footer__item">
               <a class="footer__link  footer__text" href="#">Контакты</a>
             </li>
           </ul>
@@ -210,10 +220,10 @@
           <p class="footer__title">Наш офис</p>
           <button class="footer__btn" type="button"><span class="visually-hidden">Развернуть</span></button>
           <ul class="footer__list">
-            <li сlass="footer__item  footer__text">г. Мытищи, Олимпийский проспект, д.10</li>
-            <li сlass="footer__item  footer__text">+7 (495) 589-40-50</li>
-            <li сlass="footer__item  footer__text">+7 (925) 003-87-67</li>
-            <li сlass="footer__item  footer__text">+7 (926) 926-080-79</li>
+            <li class="footer__item  footer__text">г. Мытищи, Олимпийский проспект, д.10</li>
+            <li class="footer__item  footer__text">+7 (495) 589-40-50</li>
+            <li class="footer__item  footer__text">+7 (925) 003-87-67</li>
+            <li class="footer__item  footer__text">+7 (926) 926-080-79</li>
           </ul>
         </div>
       </div>
@@ -235,16 +245,16 @@
       <p class="contacts__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="form">
         <div class="contacts__name  form__field">
-          <input type="text" name="name-field" id="name" placeholder="Имя">
-          <label class="visually-hidden" for="name">Имя</label>
+          <input type="text" name="name-field" id="name-modal" placeholder="Имя">
+          <label class="visually-hidden" for="name-modal">Имя</label>
         </div>
         <div class="contacts__phone  form__field">
-          <input type="tel" name="phone-field" id="phone" placeholder="Телефон">
-          <label class="visually-hidden" for="phone">Телефон</label>
+          <input type="tel" name="phone-field" id="phone-modal" placeholder="Телефон">
+          <label class="visually-hidden" for="phone-modal">Телефон</label>
         </div>
         <div class="contacts__message  form__field">
-          <textarea type="text" name="message-field" id="message" placeholder="Ваш вопрос"></textarea>
-          <label class="visually-hidden" for="message">Ваш вопрос</label>
+          <textarea name="message-field" id="message-modal" placeholder="Ваш вопрос"></textarea>
+          <label class="visually-hidden" for="message-modal">Ваш вопрос</label>
         </div>
         <div class="contacts__confidentiality">
           <button class="btn  btn--submit" type="submit">Отправить</button>

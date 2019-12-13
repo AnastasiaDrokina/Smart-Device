@@ -27,6 +27,18 @@
     padding: 46px 0 54px 0;
   }
 
+  .column__services {
+    width: 100%;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.5);
+    flex: 1 1 100%;
+    margin: 0 -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+     .footer__btn {
+      right: 13px;
+    }
+  }
+
   .column__contacts,
   .column__services {
     position: relative;

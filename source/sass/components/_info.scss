@@ -35,8 +35,20 @@
     margin-bottom: 34px;
   }
 
+  .info__p {
+    &::after {
+      content: '..';
+      display: inline;
+    }
+  }
+
   .info h2 {
     font-size: 32px;
+  }
+
+  .info__hidden {
+    display: none;
+    position: relative;
   }
 }
 

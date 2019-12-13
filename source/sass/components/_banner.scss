@@ -19,6 +19,15 @@
   left: 800px;
   z-index: -1;
   width: 705px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 611px;
+    height: 488px;
+    background: url("../img/icon-triangle-banner.svg") center no-repeat;
+  }
 }
 
 .banner__content h1 {
