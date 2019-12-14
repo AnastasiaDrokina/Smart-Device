@@ -46,6 +46,10 @@
 
 /* Tablet */
 @media (max-width: $tablet) {
+  .header {
+    padding: 20px 0 0;
+  }
+
   .header__item {
     margin-right: 0;
   }

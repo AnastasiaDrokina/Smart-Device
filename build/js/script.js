@@ -8,6 +8,10 @@ var listServices = document.querySelector('.column__services .footer__list');
 var listContacts = document.querySelector('.column__contacts .footer__list');
 var btnServices = document.querySelector('.column__services .footer__btn');
 var btnContacts = document.querySelector('.column__contacts .footer__btn');
+var contacts = document.querySelector('#contacts');
+var bannerBtn = document.querySelector('.banner__btn');
+var advantages = document.querySelector('#advantages');
+var bannerScroll = document.querySelector('.banner__scroll');
 
 // Когда модальное окно закрыто
 if (contactsToggle) {
@@ -60,11 +64,13 @@ if (btnServices) {
       btnServices.classList.remove('footer__btn--opened');
     } else {
       btnServices.classList.add('footer__btn--opened');
+      btnContacts.classList.remove('footer__btn--opened');
     }
     if (listServices.classList.contains('footer__list--opened')) {
       listServices.classList.remove('footer__list--opened');
     } else {
       listServices.classList.add('footer__list--opened');
+      listContacts.classList.remove('footer__list--opened');
     }
   });
 }
@@ -76,12 +82,30 @@ if (btnContacts) {
       btnContacts.classList.remove('footer__btn--opened');
     } else {
       btnContacts.classList.add('footer__btn--opened');
+      btnServices.classList.remove('footer__btn--opened');
     }
     if (listContacts.classList.contains('footer__list--opened')) {
       listContacts.classList.remove('footer__list--opened');
     } else {
       listContacts.classList.add('footer__list--opened');
+      listServices.classList.remove('footer__list--opened');
     }
   });
 }
 
+// Скрол
+if (bannerBtn) {
+  bannerBtn.addEventListener('click', function () {
+    window.scrollBy({top: (contacts.offsetTop - window.scrollY), behavior: 'smooth'});
+  });
+}
+
+if (bannerScroll) {
+  bannerScroll.addEventListener('click', function () {
+    window.scrollBy({top: (advantages.offsetTop - window.scrollY), behavior: 'smooth'});
+  });
+}
+
+// Валидация для телефона
+IMask(document.querySelector('#phone'), {mask: '+{7}(000)000-00-00'});
+IMask(document.querySelector('#phone-modal'), {mask: '+{7}(000)000-00-00'});

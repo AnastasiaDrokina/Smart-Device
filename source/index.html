@@ -44,7 +44,6 @@
     <section class="banner">
       <div class="container  banner__container">
         <div class="banner__wrapper">
-          <!-- desktop 1х: 705px; 2x: 2400px -->
           <img srcset="
           img/banner-desktop@1x.png 705w,
           img/banner-desktop@2x.png 1410w,
@@ -64,14 +63,16 @@
         <div class="banner__content">
           <h1>Печатные <span>платы</span></h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="btn  btn--blue" type="button"><span class="btn-text-desktop">Получить бесплатную консультацию</span>
+          <button class="btn  btn--blue  banner__btn" type="button">
+            <span class="btn-text-desktop">Получить бесплатную консультацию</span>
             <span class="btn-text-mobile">Бесплатная консультация</span>
           </button>
+          <button class="banner__scroll" type="button">Скролл вниз</button>
         </div>
       </div>
     </section>
   </div>
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="container">
       <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list">
@@ -80,7 +81,7 @@
               <use xlink:href="#icon-stopwatch-blue" />
             </svg>
             <h3>Оперативные сроки </h3>
-            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
           </li>
           <li class="advantages__item">
             <svg class="advantages__icon advantages__icon-hired">
@@ -124,7 +125,7 @@
       </div>
     </div>
   </section>
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container  contacts__container">
       <div class="contacts__wrapper">
         <h2>Остались вопросы? Задайте их нам!</h2>
@@ -266,6 +267,7 @@
       </form>
     </div>
   </div>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
