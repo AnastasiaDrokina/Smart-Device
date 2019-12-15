@@ -42,6 +42,9 @@
 
 /* Tablet */
 @media (max-width: $tablet) {
+  .social__list {
+    margin-right: 14px;
+  }
   .social__item {
     margin-top: 0;
   }

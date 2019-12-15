@@ -30,7 +30,7 @@
 .form__field-confidentiality label::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 4px;
   left: 0;
   display: block;
   width: 16px;
@@ -41,7 +41,7 @@
 .form__field-confidentiality label::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 9px;
   left: 4px;
   display: none;
   width: 8px;
@@ -67,7 +67,11 @@
 /* Mobile */
 @media (max-width: $mobile) {
   .form__field input {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+  }
+
+  .form__field textarea {
+    min-height: 100px;
   }
 
   .form__field-confidentiality {

@@ -1,5 +1,5 @@
 .header {
-  padding: 30px 0;
+  padding: 33px 0 27px;
 }
 
 .header__container {
@@ -29,13 +29,13 @@
 .header__envelope {
   width: 19px;
   height: 14px;
-  margin: 0 20px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .header__phone-call {
   width: 18px;
   height: 18px;
-  margin: 0 16px 0 0;
+  margin: 0 6px 0 0;
 }
 
 .header__envelope,
@@ -50,6 +50,9 @@
     padding: 20px 0 0;
   }
 
+  .header__list {
+    margin-right: 16px;
+  }
   .header__item {
     margin-right: 0;
   }
@@ -72,6 +75,18 @@
 }
 /* Mobile */
 @media (max-width: $mobile) {
+  .header {
+    padding-top: 17px;
+  }
+
+  .header__container {
+    padding-left: 17px;
+  }
+
+  .header__list {
+    margin-right: 8px;
+  }
+  
   .header__envelope {
     margin-right: 23px;
   }

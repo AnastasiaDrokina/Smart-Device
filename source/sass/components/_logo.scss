@@ -4,6 +4,7 @@
 
 .logo__text {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin: 0 0 0 16px;
 }
@@ -30,6 +31,15 @@ footer .logo__subtitle {
 
 /* Mobile */
 @media (max-width: $mobile) {
+  .logo {
+    width: 38px;
+  }
+
+  .footer .logo {
+    width: 230px;
+    align-items: center;
+  }
+
   .logo__text {
     display: none;
   }

@@ -1,5 +1,9 @@
 .column__social {
-  width: 417px;
+  width: 380px;
+}
+
+.column__contact {
+  width: 335px;
 }
 /* Tablet */
 @media (max-width: $tablet) {
@@ -8,7 +12,7 @@
     flex: 1 1 100%;
     width: 100%;
     margin: 0 -15px;
-    padding: 10px 15px 26px 10px;
+    padding: 0px 15px 21px 10px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(98, 105, 98, 0.5);
@@ -16,7 +20,15 @@
 
   .column__services,
   .column__contacts {
-    padding-top: 22px;
+    padding-top: 35px;
+  }
+
+  .column__services {
+    padding-left: 6px;
+  }
+
+  .column__contacts {
+    margin-right: 27px;
   }
 }
 
@@ -24,7 +36,7 @@
 @media (max-width: $mobile) {
   .column__social {
     flex-direction: column;
-    padding: 46px 0 54px 0;
+    padding: 32px 0 51px 0;
   }
 
   .column__services {
@@ -32,16 +44,24 @@
     border-bottom: 1px solid rgba(98, 105, 98, 0.5);
     flex: 1 1 100%;
     margin: 0 -15px;
-    padding-left: 15px;
+    padding-top: 30px;
+    padding-left: 10px;
     padding-right: 15px;
-     .footer__btn {
-      right: 13px;
-    }
   }
 
   .column__contacts,
   .column__services {
     position: relative;
     width: 100%;
+  }
+
+  .column__contacts {
+    margin: 0 -15px;
+    padding-top: 30px;
+    padding-left: 10px;
+
+    .footer__btn {
+      right: -12px;
+    }
   }
 }

@@ -1,10 +1,11 @@
 .info {
-  padding: 90px 0 96px 0;
+  padding: 102px 0 94px 0;
 }
 
 .info__container {
-  padding-left: 200px;
-  background: url("../img/year-desktop@1x.png") left center no-repeat transparent;
+  padding-bottom: 15px;
+  padding-left: 203px;
+  background: url("../img/year-desktop@1x.png") left -6px top 6px no-repeat transparent;
   background-size: 220px 317px;
 }
 
@@ -16,26 +17,37 @@
 
 .info h2 {
   @include font(36px, 51px, $font-roboto-regular, $brown);
-  margin: 0 0 18px 0;
+  margin: 0 0 22px 0;
 }
 
 .info p {
   line-height: 22px;
-  margin-bottom: 50px;
+  margin-bottom: 21px;
   text-overflow: ellipsis;
+}
+
+.info .info__p {
+  margin-bottom: 38px;
 }
 
 /* Tablet */
 @media (max-width: $tablet) {
   .info {
-    padding: 60px 0 45px 0;
+    padding: 61px 0 68px 0;
+  }
+
+  .info__container {
+    padding-left: 210px;
+    background-size: 247px;
   }
 
   .info p {
-    margin-bottom: 34px;
+    margin-bottom: 20px;
   }
 
-  .info__p {
+  .info .info__p {
+    margin-bottom: 40px;
+
     &::after {
       content: '..';
       display: inline;
@@ -55,7 +67,20 @@
 /* Mobile */
 @media (max-width: $mobile) {
   .info {
-    padding: 60px 0;
+    padding: 58px 0 50px;
+
+    h2 {
+      margin-bottom: 0;
+      font-size: 26px;
+    }
+
+    p {
+      margin-bottom: 38px;
+    }
+
+    .info__p {
+      margin-bottom: 28px;
+    }
   }
 
   .info__container {
