@@ -2,7 +2,7 @@
   position: relative;
   min-height: 670px;
   padding: 90px 40px;
-  background-color: $blue;
+  background: url(../img/icon-triangle-contacts.svg) left 174px top -60px no-repeat $blue;
 }
 
 .contacts__container {
@@ -71,6 +71,7 @@
   .contacts {
     min-height: 665px;
     padding-top: 75px;
+    background: $blue;
 
     h2 {
       font-size: 32px;
