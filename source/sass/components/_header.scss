@@ -53,6 +53,7 @@
   .header__list {
     margin-right: 16px;
   }
+
   .header__item {
     margin-right: 0;
   }
@@ -73,6 +74,7 @@
     margin: 0;
   }
 }
+
 /* Mobile */
 @media (max-width: $mobile) {
   .header {
@@ -86,7 +88,7 @@
   .header__list {
     margin-right: 8px;
   }
-  
+
   .header__envelope {
     margin-right: 23px;
   }

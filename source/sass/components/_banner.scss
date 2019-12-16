@@ -1,8 +1,8 @@
 .banner {
+  position: relative;
   padding: 203px 0 108px 0;
   min-height: 766px;
   overflow: hidden;
-  position: relative;
 }
 
 .banner__container {
@@ -21,6 +21,7 @@
   left: 805px;
   z-index: -1;
   width: 705px;
+
   &::before {
     content: "";
     position: absolute;
@@ -95,6 +96,7 @@
     position: absolute;
     top: -75px;
     left: 510px;
+
     &::before {
       top: -29px;
       left: -56px;
@@ -129,6 +131,7 @@
     display: none;
   }
 }
+
 /* Mobile */
 @media (max-width: $mobile) {
   .banner {
@@ -169,6 +172,7 @@
     right: -8px;
     left: auto;
     width: 301px;
+
     &::before {
       top: -21px;
       left: 141px;

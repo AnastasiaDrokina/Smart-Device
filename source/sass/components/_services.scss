@@ -24,6 +24,7 @@
   background-size: cover;
   flex: 1 1 300px;
   max-width: 370px;
+
   &:hover,
   &:focus {
     &::before {
@@ -169,10 +170,8 @@
       background-image: url("../img/service-third-tablet@2x.jpg");
     }
   }
-  .services__items {
-    flex-wrap: nowrap;
-  }
 }
+
 /* Mobile */
 @media (max-width: $mobile) {
   .services {

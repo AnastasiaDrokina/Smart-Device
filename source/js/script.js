@@ -1,3 +1,4 @@
+/* eslint-disable new-cap, no-undef */
 'use strict';
 var modalContacts = document.querySelector('.modal.contacts');
 var contactsToggle = document.querySelector('.header__btn');
@@ -12,8 +13,8 @@ var contacts = document.querySelector('#contacts');
 var bannerBtn = document.querySelector('.banner__btn');
 var advantages = document.querySelector('#advantages');
 var bannerScroll = document.querySelector('.banner__scroll');
-var contactsForm = document.querySelector('#contacts .form'); 
-var contactsFormModal = document.querySelector('.modal .form'); 
+var contactsForm = document.querySelector('#contacts .form');
+var contactsFormModal = document.querySelector('.modal .form');
 var nameInput = document.querySelector('#name');
 var nameInputModal = document.querySelector('#name-modal');
 var phoneInput = document.querySelector('#phone');
@@ -44,7 +45,7 @@ if (modalCloseBtn) {
 
 // Закрытие клавишей ESC
 if (window.addEventListener) {
-  window.addEventListener("keydown", function (evt) {
+  window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (!modalContacts.classList.contains('modal--close')) {
@@ -57,7 +58,7 @@ if (window.addEventListener) {
 
 // Закрытие overlay
 if (overlay) {
-  overlay.addEventListener("click", function () {
+  overlay.addEventListener('click', function () {
     if (!modalContacts.classList.contains('modal--close')) {
       modalContacts.classList.add('modal--close');
       overlay.classList.add('overlay--close');
@@ -118,6 +119,7 @@ if (bannerScroll) {
 IMask(document.querySelector('#phone'), {mask: '+{7}(000)000-00-00'});
 IMask(document.querySelector('#phone-modal'), {mask: '+{7}(000)000-00-00'});
 
+// Хранение данных в localStorage
 if (contactsForm) {
   contactsForm.addEventListener('submit', function (event) {
     event.preventDefault();

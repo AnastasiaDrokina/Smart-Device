@@ -2,7 +2,7 @@
   position: relative;
   min-height: 670px;
   padding: 90px 40px;
-  background: url(../img/icon-triangle-contacts.svg) left 174px top -60px no-repeat $blue;
+  background: url("../img/icon-triangle-contacts.svg") left 174px top -60px no-repeat $blue;
 }
 
 .contacts__container {
@@ -61,11 +61,16 @@
   background-color: $blue;
 }
 
+.contacts.modal {
+  background-image: none;
+}
+
 @media (max-width: 1280px) {
   .contacts__container {
     background-position: left center;
   }
 }
+
 /* Tablet */
 @media (max-width: $tablet) {
   .contacts {
@@ -77,6 +82,7 @@
       font-size: 32px;
     }
   }
+
   .contacts__container {
     padding-left: 50px;
     background: none;
