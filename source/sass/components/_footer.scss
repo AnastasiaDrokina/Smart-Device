@@ -23,8 +23,8 @@
 }
 
 .footer__list {
+  @include font(15px, 25px, $font-PTMono, rgba(27, 45, 55, 0.5));
   @include list-reset;
-  opacity: 0.5;
 }
 
 .column__services .footer__list {
@@ -40,10 +40,11 @@
 
 .footer__text {
   @include font(15px, 25px, $font-PTMono, $black-3);
+  opacity: 0.5;
 
   &:hover,
-  &:active {
-    opacity: 0.5;
+  &:focus {
+    opacity: 1;
   }
 }
 
@@ -57,12 +58,19 @@
 }
 
 .footer__copyright {
-  border-top: 1px solid rgba(98, 105, 98, 0.5);
+  border-top: $border-footer;
 }
 
 .footer__copyright-text {
   @include font(13px, 24px, $font-PTMono, $black-3);
   opacity: 0.5;
+}
+
+a.footer__copyright-text {
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .footer__rights {

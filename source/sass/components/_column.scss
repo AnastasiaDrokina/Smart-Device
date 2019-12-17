@@ -12,11 +12,11 @@
     display: flex;
     flex: 1 1 100%;
     width: 100%;
-    margin: 0 -15px;
+    margin: 0 -7px 0 -19px;
     padding: 0 15px 21px 10px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(98, 105, 98, 0.5);
+    border-bottom: $border-footer;
   }
 
   .column__services,
@@ -47,7 +47,7 @@
     padding-top: 30px;
     padding-left: 10px;
     padding-right: 15px;
-    border-bottom: 1px solid rgba(98, 105, 98, 0.5);
+    border-bottom: $border-footer;
   }
 
   .column__contacts,

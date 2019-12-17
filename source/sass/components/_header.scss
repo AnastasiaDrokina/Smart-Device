@@ -24,6 +24,11 @@
 
 .header__link {
   color: $white;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .header__envelope {

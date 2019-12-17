@@ -1,5 +1,6 @@
 /* eslint-disable new-cap, no-undef */
 'use strict';
+var body = document.querySelector('body');
 var modalContacts = document.querySelector('.modal.contacts');
 var contactsToggle = document.querySelector('.header__btn');
 var modalCloseBtn = document.querySelector('.modal__close-btn');
@@ -28,6 +29,7 @@ if (contactsToggle) {
     if (modalContacts.classList.contains('modal--close')) {
       modalContacts.classList.remove('modal--close');
       overlay.classList.remove('overlay--close');
+      body.classList.add('overflow');
       nameField.focus();
     }
   });
@@ -39,6 +41,7 @@ if (modalCloseBtn) {
     if (!modalContacts.classList.contains('modal--close')) {
       modalContacts.classList.add('modal--close');
       overlay.classList.add('overlay--close');
+      body.classList.remove('overflow');
     }
   });
 }
@@ -139,3 +142,5 @@ if (contactsFormModal) {
     localStorage.setItem('message-modal', messageInputModal.value);
   });
 }
+
+// Для формы без скролла

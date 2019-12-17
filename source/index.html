@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Умные решения от Smart Device: производство и мотаж печатных плат, комплектующие для светотехники ">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -134,15 +135,15 @@
         <p class="contacts__text">Мы проконсультируем Вас бесплатно</p>
         <form class="form">
           <div class="contacts__name  form__field">
-            <input type="text" name="name-field" id="name" placeholder="Имя">
+            <input type="text" name="name-field" id="name" placeholder="Имя" required>
             <label class="visually-hidden" for="name">Имя</label>
           </div>
           <div class="contacts__phone  form__field">
-            <input type="tel" name="phone-field" id="phone" placeholder="Телефон">
+            <input type="tel" name="phone-field" id="phone" placeholder="Телефон" required>
             <label class="visually-hidden" for="phone">Телефон</label>
           </div>
           <div class="contacts__message  form__field">
-            <textarea name="message-field" id="message" placeholder="Ваш вопрос"></textarea>
+            <textarea name="message-field" id="message" placeholder="Ваш вопрос" required></textarea>
             <label class="visually-hidden" for="message">Ваш вопрос</label>
           </div>
           <div class="contacts__confidentiality">
@@ -223,10 +224,10 @@
           <p class="footer__title">Наш офис</p>
           <button class="footer__btn" type="button"><span class="visually-hidden">Развернуть</span></button>
           <ul class="footer__list">
-            <li class="footer__item  footer__text">г. Мытищи, Олимпийский проспект, д.10</li>
-            <li class="footer__item  footer__text">+7 (495) 589-40-50</li>
-            <li class="footer__item  footer__text">+7 (925) 003-87-67</li>
-            <li class="footer__item  footer__text">+7 (926) 926-080-79</li>
+            <li class="footer__item">г. Мытищи, Олимпийский проспект, д.10</li>
+            <li class="footer__item">+7 (495) 589-40-50</li>
+            <li class="footer__item">+7 (925) 003-87-67</li>
+            <li class="footer__item">+7 (926) 926-080-79</li>
           </ul>
         </div>
       </div>
@@ -236,7 +237,7 @@
         <p class="footer__copyright-text  footer__copyright-text  footer__rights">Все права защищены</p>
         <p class="footer__copyright-text  footer__company">1999-2018 SD Service Devices</p>
         <p><a class="footer__copyright-text" href="#">Условия конфиденциальности</a></p>
-        <p class="footer__copyright-text">Developed by wow studio</p>
+        <p><a class="footer__copyright-text" href="#">Developed by wow studio</a></p>
       </div>
     </div>
   </footer>
@@ -270,6 +271,6 @@
     </div>
   </div>
   <script src="https://unpkg.com/imask"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

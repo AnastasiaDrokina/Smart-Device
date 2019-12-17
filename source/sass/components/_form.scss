@@ -1,3 +1,8 @@
+.form input,
+.form textarea {
+  border-radius: 0;
+}
+
 .form__field input,
 .form__field textarea {
   width: 270px;
@@ -19,12 +24,19 @@
 .form__field textarea {
   width: 100%;
   min-height: 154px;
+  resize: none;
 }
 
 .form__field-confidentiality label {
   position: relative;
   display: inline-block;
   padding-left: 30px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .form__field-confidentiality label::before {
