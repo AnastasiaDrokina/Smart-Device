@@ -3,6 +3,7 @@
 }
 
 .info__container {
+  min-height: 220px;
   padding-bottom: 15px;
   padding-left: 203px;
   background: url("../img/year-desktop@1x.png") left -6px top 6px no-repeat transparent;
@@ -49,7 +50,7 @@
     margin-bottom: 40px;
 
     &::after {
-      content: '".."';
+      content: "..";
       display: inline;
     }
   }

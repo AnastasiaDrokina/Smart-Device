@@ -25,7 +25,8 @@ var messageInputModal = document.querySelector('#message-modal');
 
 // Когда модальное окно закрыто
 if (contactsToggle) {
-  contactsToggle.addEventListener('click', function () {
+  contactsToggle.addEventListener('click', function (evt) {
+    evt.preventDefault();
     if (modalContacts.classList.contains('modal--close')) {
       modalContacts.classList.remove('modal--close');
       overlay.classList.remove('overlay--close');

@@ -1,51 +1,18 @@
-.logo__link {
+.header .logo img:first-child {
   display: flex;
 }
 
-.logo__text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 0 0 16px;
-}
-
-.logo__title {
-  @include font(25px, 29px, $font-roboto-bold, $white);
-}
-
-.logo__title--darker {
-  color: $black-2;
-}
-
-.logo__subtitle {
-  @include font(12px, 14px, $font-roboto-medium, $grey-1);
-}
-
-.logo__subtitle--darker {
-  color: $grey-2;
-}
-
-footer .logo__subtitle {
-  color: $grey-3;
+.header .logo img:last-child {
+  display: none;
 }
 
 /* Mobile */
 @media (max-width: $mobile) {
-  .logo {
-    width: 38px;
-  }
-
-  .footer .logo {
-    width: 230px;
-    align-items: center;
-  }
-
-  .logo__text {
+  .header .logo img:first-child {
     display: none;
   }
 
-  .logo__text--footer {
+  .header .logo img:last-child {
     display: block;
-    max-width: 170px;
   }
 }

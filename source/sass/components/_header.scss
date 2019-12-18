@@ -27,24 +27,16 @@
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    opacity: 0.5;
   }
 }
 
-.header__envelope {
-  width: 19px;
-  height: 14px;
-  margin: 0 10px 0 0;
-}
-
 .header__phone-call {
-  width: 18px;
-  height: 18px;
   margin: 0 6px 0 0;
 }
 
-.header__envelope,
-.header__phone-call {
+.header__icon {
+  margin: 0 10px 0 0;
   vertical-align: middle;
   fill: $blue;
 }

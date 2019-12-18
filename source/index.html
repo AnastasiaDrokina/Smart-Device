@@ -15,29 +15,29 @@
   <div class="head">
     <header class="header">
         <div class="container  header__container">
-          <a class="logo  logo__link" href="#" aria-label="Логотип Smart Device">
-            <img src="img/icon-logo.svg" width="52" height="52" alt="Логотип Smart Device">
-            <div class="logo__text">
-              <span class="logo__title">Smart Device</span>
-              <span class="logo__subtitle">умные <span class="logo__subtitle  logo__subtitle--darker">технологии</span>
-              </span>
-            </div>
+          <a class="logo">
+            <img src="img/icon-logo-header.svg" width="202" height="59" alt="Логотип Smart Device. Умные технологии.">
+            <img src="img/icon-logo-mobile.svg" width="38" height="38" alt="Логотип Smart Device. Умные технологии.">
           </a>
           <ul class="header__list">
             <li class="header__item">
-              <svg class="header__envelope">
-                <use xlink:href="#icon-envelope" />
-              </svg>
-              <a class="header__link" href="mailto:info@sd.ru">info@sd.ru</a>
+              <a class="header__link" href="mailto:info@sd.ru">
+                <svg class="header__icon" width="19" height="14">
+                  <use xlink:href="#icon-envelope" />
+                </svg>
+                info@sd.ru
+              </a>
             </li>
             <li class="header__item">
-              <svg class="header__phone-call">
-                <use xlink:href="#icon-phone-call" />
-              </svg>
-              <a class="header__link" href="tel:+7(495)0005252">+7 (495) 000 52 52</a>
+              <a class="header__link" href="tel:+7(495)0005252">
+                <svg class="header__icon" width="18" height="18">
+                  <use xlink:href="#icon-phone-call" />
+                </svg>
+                +7 (495) 000 52 52
+              </a>
             </li>
             <li class="header__item">
-              <button class="btn  btn--outline  header__btn" type="button">Заказать звонок</button>
+              <a href="#" class="btn  btn--outline  header__btn">Заказать звонок</a>
             </li>
           </ul>
         </div>
@@ -62,8 +62,8 @@
           alt="Печатные платы">
         </div>
         <div class="banner__content">
-          <h1>Печатные <span>платы</span></h1>
-          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <h1 class="banner__title">Печатные <span>платы</span></h1>
+          <p class="banner__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <button class="btn  btn--blue  banner__btn" type="button">
             <span class="btn-text-desktop">Получить бесплатную консультацию</span>
             <span class="btn-text-mobile">Бесплатная консультация</span>
@@ -75,32 +75,32 @@
   </div>
   <div class="company">
     <section class="advantages" id="advantages">
-      <div class="container">
+      <div class="container  container--narrow">
         <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <svg class="advantages__icon advantages__icon-stopwatch">
+              <svg class="advantages__icon" width="29" height="35">
                 <use xlink:href="#icon-stopwatch-blue" />
               </svg>
               <h3>Оперативные сроки </h3>
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__icon advantages__icon-hired">
+              <svg class="advantages__icon" width="35" height="35">
                 <use xlink:href="#icon-hired" />
               </svg>
               <h3>Крупные поставщики</h3>
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__icon advantages__icon-detective">
+              <svg class="advantages__icon" width="36" height="31">
                 <use xlink:href="#icon-detective" />
               </svg>
               <h3>Полная конфиденциальность</h3>
               <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__icon advantages__icon-tag">
+              <svg class="advantages__icon" width="35" height="35">
                 <use xlink:href="#icon-tag" />
               </svg>
               <h3>Персонализация стоимости</h3>
@@ -110,16 +110,16 @@
       </div>
     </section>
     <section class="info">
-      <div class="container  info__container">
+      <div class="container  container--narrow  info__container">
         <h2>О компании</h2>
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-        <p class="info__p">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span class="info__hidden">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
-        <button class="btn  btn--white" type="button">Подробнее</button>
+        <p class="info__p">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="info__hidden">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+        <a class="btn  btn--white" href="#">Подробнее</a>
       </div>
     </section>
   </div>
   <section class="services">
-    <div class="container  services__container">
+    <div class="container  container--narrow">
       <h2>Service Device предлагает следующие товары и услуги</h2>
       <div class="services__items">
         <a class="services__link  services__link-production" href="#">Производство <br> печатных плат</a>
@@ -132,15 +132,15 @@
     <div class="container  contacts__container">
       <div class="contacts__wrapper">
         <h2>Остались вопросы? Задайте их нам!</h2>
-        <p class="contacts__text">Мы проконсультируем Вас бесплатно</p>
-        <form class="form">
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <form class="form" method="GET">
           <div class="contacts__name  form__field">
-            <input type="text" name="name-field" id="name" placeholder="Имя" required>
             <label class="visually-hidden" for="name">Имя</label>
+            <input type="text" name="name-field" id="name" placeholder="Имя" required>
           </div>
           <div class="contacts__phone  form__field">
-            <input type="tel" name="phone-field" id="phone" placeholder="Телефон" required>
             <label class="visually-hidden" for="phone">Телефон</label>
+            <input type="tel" name="phone-field" id="phone" placeholder="Телефон" required>
           </div>
           <div class="contacts__message  form__field">
             <textarea name="message-field" id="message" placeholder="Ваш вопрос" required></textarea>
@@ -149,8 +149,8 @@
           <div class="contacts__confidentiality">
             <button class="btn  btn--question" type="submit">Задать вопрос</button>
             <div class="form__field-confidentiality">
-              <input class="visually-hidden" type="checkbox" name="confidentiality-field" id="confidentiality" checked>
               <label for="confidentiality">Я согласен на обработку  персональных данных</label>
+              <input class="visually-hidden" type="checkbox" name="confidentiality-field" id="confidentiality" checked>
             </div>
           </div>
         </form>
@@ -161,15 +161,11 @@
     <div class="footer__container  container">
       <div class="footer__content column">
         <div class="column__social">
-          <a class="logo  logo__link" href="#" aria-label="Логотип Smart Device">
-            <img src="img/icon-logo.svg" width="52" height="52" alt="Логотип Smart Device">
-            <div class="logo__text  logo__text--footer">
-              <span class="logo__title  logo__title--darker">Smart Device</span>
-              <span class="logo__subtitle">умные <span class="logo__subtitle">технологии</span></span>
-            </div>
+          <a class="logo">
+            <img src="img/icon-logo-footer.svg" width="216" height="52" alt="Логотип Smart Device. Умные технологии.">
           </a>
           <p class="footer__copyright-text  footer__company">1999-2018 SD Service Devices</p>
-          <ul class="social  social__list">
+          <ul class="social">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Мы в Facebook">
                 <svg class="social__facebook  social__icon">
@@ -194,7 +190,7 @@
           </ul>
         </div>
         <div class="column__services">
-          <p class="footer__title">Разделы сайта</p>
+          <h3>Разделы сайта</h3>
           <button class="footer__btn" type="button"><span class="visually-hidden">Развернуть</span></button>
           <ul class="footer__list">
             <li class="footer__item">
@@ -221,13 +217,22 @@
           </ul>
         </div>
         <div class="column__contacts">
-          <p class="footer__title">Наш офис</p>
+          <h3 class="footer__title">Наш офис</h3>
           <button class="footer__btn" type="button"><span class="visually-hidden">Развернуть</span></button>
           <ul class="footer__list">
             <li class="footer__item">г. Мытищи, Олимпийский проспект, д.10</li>
-            <li class="footer__item">+7 (495) 589-40-50</li>
-            <li class="footer__item">+7 (925) 003-87-67</li>
-            <li class="footer__item">+7 (926) 926-080-79</li>
+            <li class="footer__item">
+              <a class="footer__link  footer__text" href="tel:+7(495)589-40-50">
+              +7 (495) 589-40-50</li>
+            </a>
+            <li class="footer__item">
+              <a class="footer__link  footer__text" href="tel:+7(925)003-87-67">
+              +7 (925) 003-87-67</li>
+            </a>
+            <li class="footer__item">
+              <a class="footer__link  footer__text" href="tel:+7(926)926-080-79">
+              +7 (926) 926-080-79</li>
+            </a>
           </ul>
         </div>
       </div>
@@ -246,15 +251,15 @@
     <div class="modal__wrapper  container">
       <button class="modal__close-btn" type="button">Закрыть</button>
       <h2 class="contacts__title">Закажите звонок</h2>
-      <p class="contacts__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form class="form">
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="form" method="GET">
         <div class="contacts__name  form__field">
-          <input type="text" name="name-field" id="name-modal" placeholder="Имя">
           <label class="visually-hidden" for="name-modal">Имя</label>
+          <input type="text" name="name-field" id="name-modal" placeholder="Имя">
         </div>
         <div class="contacts__phone  form__field">
-          <input type="tel" name="phone-field" id="phone-modal" placeholder="Телефон">
           <label class="visually-hidden" for="phone-modal">Телефон</label>
+          <input type="tel" name="phone-field" id="phone-modal" placeholder="Телефон">
         </div>
         <div class="contacts__message  form__field">
           <textarea name="message-field" id="message-modal" placeholder="Ваш вопрос"></textarea>
@@ -263,8 +268,8 @@
         <div class="contacts__confidentiality">
           <button class="btn  btn--submit" type="submit">Отправить</button>
           <div class="form__field-confidentiality">
-            <input class="visually-hidden" type="checkbox" name="confidentiality-field" id="confidentiality-modal" checked>
             <label for="confidentiality-modal">Я согласен на обработку персональных данных</label>
+            <input class="visually-hidden" type="checkbox" name="confidentiality-field" id="confidentiality-modal" checked>
           </div>
         </div>
       </form>

@@ -34,7 +34,7 @@
   }
 }
 
-.banner__content h1 {
+.banner__title {
   @include font(80px, 94px, $font-roboto-bold, $white);
   max-width: 683px;
   margin: 0 0 27px 0;
@@ -44,7 +44,7 @@
   word-spacing: normal;
 }
 
-.banner__content p {
+.banner__text {
   @include font(22px, 34px, $font-PTMono, $white);
   position: relative;
   margin: 0 0 45px 96px;

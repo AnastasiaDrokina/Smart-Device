@@ -18,6 +18,10 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
 
+  & + svg {
+    fill: $blue;
+  }
+
   &:last-child,
   &:nth-last-child(2) {
     margin-bottom: 0;
@@ -32,7 +36,7 @@
     color: $white;
   }
 
-  &:hover .advantages__icon {
+  &:hover svg {
     fill: $white;
   }
 }
@@ -45,26 +49,6 @@
 .advantages p {
   line-height: 22px;
   margin: 0;
-}
-
-.advantages__icon {
-  fill: $blue;
-}
-
-.advantages__icon-stopwatch {
-  width: 29px;
-  height: 35px;
-}
-
-.advantages__icon-hired,
-.advantages__icon-tag {
-  width: 35px;
-  height: 35px;
-}
-
-.advantages__icon-detective {
-  width: 36px;
-  height: 31px;
 }
 
 /* Tablet */
