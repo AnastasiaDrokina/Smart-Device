@@ -10,10 +10,3 @@
   font: inherit;
   color: inherit;
 }
-
-@mixin font($font-size, $line-height, $font-family: $font-sans-serif, $color: $brown) {
-  font-size: $font-size;
-  font-family: $font-family;
-  line-height: $line-height;
-  color: $color;
-}

@@ -23,8 +23,12 @@
 }
 
 .footer__list {
-  @include font(15px, 25px, $font-PTMono, rgba(27, 45, 55, 0.5));
   @include list-reset;
+  font-family: $font-PTMono;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: normal;
+  color: rgba(27, 45, 55, 0.5);
 }
 
 .column__services .footer__list {
@@ -32,7 +36,11 @@
 }
 
 .footer__text {
-  @include font(15px, 25px, $font-PTMono, $black-3);
+  font-family: $font-PTMono;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: normal;
+  color: $black-3;
   opacity: 0.5;
 
   &:hover,
@@ -55,7 +63,11 @@
 }
 
 .footer__copyright-text {
-  @include font(13px, 24px, $font-PTMono, $black-3);
+  font-family: $font-PTMono;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $black-3;
   opacity: 0.5;
 }
 

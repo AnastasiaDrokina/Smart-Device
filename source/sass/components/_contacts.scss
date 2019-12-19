@@ -6,13 +6,13 @@
 }
 
 .contacts__container {
-  background: url("../img/paper-airplane-desktop@1x.png") left 118px top 69px no-repeat transparent;
+  background: url("../img/paper-airplane-desktop@1x.webp") left 118px top 69px no-repeat transparent;
   background-size: 511px 288px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contacts__container {
-    background-image: url("../img/paper-airplane-desktop@2x.png");
+    background-image: url("../img/paper-airplane-desktop@2x.webp");
   }
 }
 
@@ -28,28 +28,12 @@
   justify-content: space-between;
 }
 
-.form__field:nth-child(1),
-.form__field:nth-child(2) {
-  width: calc(50% - 15px);
-  margin: 32px 0 40px;
-}
-
-.form__field:nth-child(3) {
-  flex: 1 1 100%;
-  margin-bottom: 41px;
-}
-
-.form__field:nth-child(4) {
-  display: flex;
-  align-items: center;
-}
-
-.form__field:nth-child(4) label {
-  color: $white;
-}
-
 .contacts h2 {
-  @include font(36px, 51px, $font-roboto-regular, $white);
+  font-family: $font-roboto;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  color: $white;
   margin: 0;
 }
 
@@ -97,16 +81,6 @@
     margin-left: 0;
     margin-right: 40px;
   }
-
-  .form__field:nth-child(1),
-  .form__field:nth-child(2) {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .form__field:nth-child(3) {
-    margin-bottom: 48px;
-  }
 }
 
 /* Mobile */
@@ -133,48 +107,4 @@
       flex-direction: column;
     }
   }
-
-  .form__field:nth-child(1),
-  .form__field:nth-child(2) {
-    width: 100%;
-    margin: 0;
-  }
-
-  .form__field:nth-child(1) {
-    margin-top: 16px;
-  }
-
-  .form__field:nth-child(4) {
-    flex-direction: column;
-  }
-
-  .form__field:nth-child(3) {
-    margin-bottom: 30px;
-  }
-}
-
-/* Modal */
-.modal {
-  padding: 30px 40px;
-}
-
-.modal h2 {
-  font-size: 28px;
-  line-height: 140.62%;
-}
-
-.modal p {
-  margin: 21px 0 35px 0;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.modal .form__field:nth-child(4) {
-  flex-direction: column;
-}
-
-.modal .form__field:nth-child(1),
-.modal .form__field:nth-child(2){
-  width: 100%;
-  margin: 0 0 30px 0;
 }
