@@ -1,5 +1,5 @@
 .services {
-  padding: 88px 0 107px;
+  padding: 88px 0 97px;
   background-color: $black-3;
 }
 
@@ -96,6 +96,10 @@
     padding-top: 42px;
     padding-bottom: 59px;
 
+    .container {
+      padding-right: 23px;
+    }
+
     h2 {
       margin-bottom: 45px;
       font-size: 33px;
@@ -113,6 +117,7 @@
   }
 
   .services__link {
+    margin-bottom: 20px;
     padding-top: 40px;
     overflow: hidden;
 

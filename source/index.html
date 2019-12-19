@@ -155,24 +155,17 @@
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
         <form class="form" method="GET">
-          <div class="form__field">
-            <label class="visually-hidden" for="name">Имя</label>
-            <input type="text" name="name-field" id="name" placeholder="Имя" required>
-          </div>
-          <div class="form__field">
-            <label class="visually-hidden" for="phone">Телефон</label>
-            <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone-field" id="phone" placeholder="Телефон" required>
-          </div>
-          <div class="form__field">
-            <textarea name="message-field" id="message" placeholder="Ваш вопрос" required></textarea>
-            <label class="visually-hidden" for="message">Ваш вопрос</label>
-          </div>
-          <div class="form__field">
+          <label class="visually-hidden" for="name">Имя</label>
+          <input type="text" name="name-field" id="name" placeholder="Имя" required>
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone-field" id="phone" placeholder="Телефон" required>
+          <textarea name="message-field" id="message" placeholder="Ваш вопрос" required></textarea>
+          <label class="visually-hidden" for="message">Ваш вопрос</label>
+
+          <div class="form__submit">
             <button class="btn  btn--question" type="submit">Задать вопрос</button>
-            <div class="form__field-column">
-              <input class="visually-hidden" type="checkbox" name="confidentiality-field" id="confidentiality" checked>
-              <label for="confidentiality">Я согласен на обработку  персональных данных</label>
-            </div>
+            <input class="visually-hidden" type="checkbox" name="confidentiality-field" id="confidentiality" checked>
+            <label for="confidentiality">Я согласен на обработку  персональных данных</label>
           </div>
         </form>
       </div>
@@ -274,21 +267,14 @@
       <h2 class="contacts__title">Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="form" method="GET">
-        <div class="form__field">
           <label class="visually-hidden" for="name-modal">Имя</label>
           <input type="text" name="name-field" id="name-modal" placeholder="Имя" required>
-        </div>
-        <div class="form__field">
           <label class="visually-hidden" for="phone-modal">Телефон</label>
           <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone-field" id="phone-modal" placeholder="Телефон" required>
-        </div>
-        <div class="form__field">
           <label class="visually-hidden" for="message-modal">Ваш вопрос</label>
           <textarea name="message-field" id="message-modal" placeholder="Ваш вопрос" required></textarea>
-        </div>
-        <div class="form__field">
-          <button class="btn  btn--submit" type="submit">Отправить</button>
-          <div class="form__field-column">
+          <div class="form__submit">
+            <button class="btn  btn--submit" type="submit">Отправить</button>
             <input class="visually-hidden" type="checkbox" name="confidentiality-field" id="confidentiality-modal" checked>
             <label for="confidentiality-modal">Я согласен на обработку персональных данных</label>
           </div>

@@ -5,7 +5,7 @@ var modalContacts = document.querySelector('.modal.contacts');
 var contactsToggle = document.querySelector('.header__btn');
 var modalCloseBtn = document.querySelector('.modal__close-btn');
 var overlay = document.querySelector('.overlay');
-var nameField = document.querySelector('.modal .form__field:nth-child(1) input');
+var nameField = document.querySelector('.modal [type="text"]');
 var accordions = document.querySelectorAll('.column__accordion');
 var accordionsBtn = document.querySelectorAll('.footer__btn');
 var accordionsList = document.querySelectorAll('.footer__list');

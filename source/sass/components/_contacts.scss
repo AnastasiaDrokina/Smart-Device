@@ -41,12 +41,17 @@
   color: $white;
 }
 
-.contacts__form input {
-  background-color: $blue;
+.contacts:not(.modal) [type="text"],
+.contacts:not(.modal) [type="tel"] {
+  width: calc(50% - 15px);
 }
 
 .contacts.modal {
   background-image: none;
+
+  .modal__wrapper {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -62,7 +67,7 @@
 /* Tablet */
 @media (max-width: $tablet) {
   .contacts {
-    min-height: 665px;
+    min-height: 662px;
     padding-top: 75px;
     background: $blue;
 
@@ -106,5 +111,10 @@
     form {
       flex-direction: column;
     }
+  }
+
+  .contacts:not(.modal) [type="text"],
+  .contacts:not(.modal) [type="tel"] {
+    width: 100%;
   }
 }
