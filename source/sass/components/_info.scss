@@ -27,7 +27,7 @@
   text-overflow: ellipsis;
 }
 
-.info .info__p {
+.info p + p {
   margin-bottom: 38px;
 }
 
@@ -38,6 +38,7 @@
   }
 
   .info__container {
+    min-height: 363px;
     padding-left: 210px;
     background-size: 247px;
   }
@@ -46,7 +47,7 @@
     margin-bottom: 20px;
   }
 
-  .info .info__p {
+  .info p + p {
     margin-bottom: 40px;
 
     &::after {
@@ -79,7 +80,7 @@
       margin-bottom: 38px;
     }
 
-    .info__p {
+    p + p {
       margin-bottom: 28px;
     }
   }

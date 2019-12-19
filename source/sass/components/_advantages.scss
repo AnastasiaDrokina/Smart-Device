@@ -18,7 +18,7 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
 
-  & + svg {
+  svg {
     fill: $blue;
   }
 
@@ -44,6 +44,7 @@
 .advantages h3 {
   @include font(24px, 34px, $font-roboto-regular, $blue);
   margin: 16px 0 15px;
+  font-weight: normal;
 }
 
 .advantages p {

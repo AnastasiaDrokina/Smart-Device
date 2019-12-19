@@ -19,8 +19,8 @@
 }
 
 .btn--white {
+  display: inline-block;
   max-width: 180px;
-  padding: 13px 50px;
   color: $blue;
   border-color: $blue;
 }
@@ -94,6 +94,7 @@
   .btn--blue {
     display: block;
     min-width: 287px;
+    max-width: none;
     padding: 11px 22px;
     margin-right: auto;
     margin-left: auto;

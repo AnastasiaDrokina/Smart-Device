@@ -5,11 +5,10 @@ var modalContacts = document.querySelector('.modal.contacts');
 var contactsToggle = document.querySelector('.header__btn');
 var modalCloseBtn = document.querySelector('.modal__close-btn');
 var overlay = document.querySelector('.overlay');
-var nameField = document.querySelector('.modal .contacts__name input');
-var listServices = document.querySelector('.column__services .footer__list');
-var listContacts = document.querySelector('.column__contacts .footer__list');
-var btnServices = document.querySelector('.column__services .footer__btn');
-var btnContacts = document.querySelector('.column__contacts .footer__btn');
+var nameField = document.querySelector('.modal .form__field:nth-child(1) input');
+var accordions = document.querySelectorAll('.column__accordion');
+var accordionsBtn = document.querySelectorAll('.footer__btn');
+var accordionsList = document.querySelectorAll('.footer__list');
 var contacts = document.querySelector('#contacts');
 var bannerBtn = document.querySelector('.banner__btn');
 var advantages = document.querySelector('#advantages');
@@ -48,17 +47,16 @@ if (modalCloseBtn) {
 }
 
 // Закрытие клавишей ESC
-if (window.addEventListener) {
-  window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (!modalContacts.classList.contains('modal--close')) {
-        modalContacts.classList.add('modal--close');
-        overlay.classList.add('overlay--close');
-      }
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (!modalContacts.classList.contains('modal--close')) {
+      modalContacts.classList.add('modal--close');
+      overlay.classList.add('overlay--close');
+      body.classList.remove('overflow');
     }
-  });
-}
+  }
+});
 
 // Закрытие overlay
 if (overlay) {
@@ -66,45 +64,35 @@ if (overlay) {
     if (!modalContacts.classList.contains('modal--close')) {
       modalContacts.classList.add('modal--close');
       overlay.classList.add('overlay--close');
+      body.classList.remove('overflow');
     }
   });
 }
 
-// Открывает и закрывает "Разделы сайта"
-if (btnServices) {
-  btnServices.addEventListener('click', function () {
-    if (btnServices.classList.contains('footer__btn--opened')) {
-      btnServices.classList.remove('footer__btn--opened');
-    } else {
-      btnServices.classList.add('footer__btn--opened');
-      btnContacts.classList.remove('footer__btn--opened');
-    }
-    if (listServices.classList.contains('footer__list--opened')) {
-      listServices.classList.remove('footer__list--opened');
-    } else {
-      listServices.classList.add('footer__list--opened');
-      listContacts.classList.remove('footer__list--opened');
-    }
-  });
-}
+// Открывает и закрывает Аккордеон
+accordions.forEach(function (accordion) {
+  var btn = accordion.querySelector('.footer__btn');
+  var list = accordion.querySelector('.footer__list');
 
-// Открывает и закрывает "Наш офис"
-if (btnContacts) {
-  btnContacts.addEventListener('click', function () {
-    if (btnContacts.classList.contains('footer__btn--opened')) {
-      btnContacts.classList.remove('footer__btn--opened');
+  btn.addEventListener('click', function () {
+    if (btn.classList.contains('footer__btn--opened')) {
+      btn.classList.remove('footer__btn--opened');
     } else {
-      btnContacts.classList.add('footer__btn--opened');
-      btnServices.classList.remove('footer__btn--opened');
+      accordionsBtn.forEach(function (accordionBtn) {
+        accordionBtn.classList.remove('footer__btn--opened');
+      });
+      btn.classList.add('footer__btn--opened');
     }
-    if (listContacts.classList.contains('footer__list--opened')) {
-      listContacts.classList.remove('footer__list--opened');
+    if (list.classList.contains('footer__list--opened')) {
+      list.classList.remove('footer__list--opened');
     } else {
-      listContacts.classList.add('footer__list--opened');
-      listServices.classList.remove('footer__list--opened');
+      accordionsList.forEach(function (accordionList) {
+        accordionList.classList.remove('footer__list--opened');
+      });
+      list.classList.add('footer__list--opened');
     }
   });
-}
+});
 
 // Скрол
 if (bannerBtn) {
@@ -143,5 +131,3 @@ if (contactsFormModal) {
     localStorage.setItem('message-modal', messageInputModal.value);
   });
 }
-
-// Для формы без скролла

@@ -31,7 +31,7 @@
   }
 }
 
-.header__phone-call {
+.header__icon--phone {
   margin: 0 6px 0 0;
 }
 
@@ -55,17 +55,17 @@
     margin-right: 0;
   }
 
-  .header__link {
+  .header__link-text {
     display: none;
   }
 
-  .header__envelope {
+  .header__icon--envelope {
     width: 25px;
     height: 18px;
     margin-right: 33px;
   }
 
-  .header__phone-call {
+  .header__icon--phone {
     width: 24px;
     height: 24px;
     margin: 0;
