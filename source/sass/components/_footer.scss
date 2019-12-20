@@ -13,8 +13,11 @@
 
 .footer__wrapper {
   display: flex;
-  justify-content: space-between;
   text-transform: uppercase;
+
+  p:last-child {
+    margin-left: auto;
+  }
 }
 
 .footer__content {
@@ -95,6 +98,12 @@ a.footer__copyright-text {
   display: none;
 }
 
+@media (max-width: 1070px) {
+  .footer__copyright .footer__company {
+    margin-right: 83px;
+  }
+}
+
 /* Tablet */
 @media (max-width: $tablet) {
   .footer {
@@ -114,6 +123,7 @@ a.footer__copyright-text {
     margin: 0;
   }
 
+  .footer__copyright .footer__rights,
   .footer__copyright .footer__company {
     display: none;
   }
@@ -137,6 +147,10 @@ a.footer__copyright-text {
     padding-top: 12px;
     flex-direction: column;
     text-align: center;
+
+    p:last-child {
+      margin: 0;
+    }
   }
 
   .footer__container {

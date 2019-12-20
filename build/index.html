@@ -150,16 +150,12 @@
     <section class="banner">
       <div class="container  banner__container">
         <div class="banner__wrapper">
-          <img srcset="
-          img/banner-desktop@1x.webp 705w,
-          img/banner-desktop@2x.webp 1410w,
-          img/banner-tablet@1x.webp 260w,
-          img/banner-tablet@2x.webp 520w,
-          img/banner-mobile@1x.webp 294w,
-          img/banner-mobile@2x.webp 588w" sizes="
-          (max-width: 767px) 301px,
-          (max-width: 1024px) 465px,
-          705px " src="img/banner-desktop@1x.webp" width="705" height="515" alt="Печатные платы">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/banner-mobile@1x.webp 1x, img/banner-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/banner-tablet@1x.webp 1x, img/banner-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/banner-desktop@1x.webp 1x, img/banner-desktop@2x.webp 2x" type="image/webp">
+            <img src="img/banner-desktop@1x.png" width="705" height="515" alt="Печатные платы">
+          </picture>
         </div>
         <div class="banner__content">
           <h1 class="banner__title">Печатные <span>платы</span></h1>
@@ -223,21 +219,24 @@
       <h2>Service Device предлагает следующие товары и услуги</h2>
       <div class="services__items">
         <a class="services__link  services__link-production" href="#">
-          <img srcset="
-              img/service-first-desktop@1x.webp 1x,
-              img/service-first-desktop@2x.webp 2x" src="img/service-first-desktop@1x.webp" width="370" height="620" alt="Производство печатных плат">
+          <picture>
+            <source srcset="img/service-first-desktop@1x.webp 1x, img/service-first-desktop@2x.webp 2x" type="image/webp">
+            <img src="img/service-first-desktop@1x.png" width="370" height="620" alt="Производство печатных плат">
+          </picture>              
           <span class="services__text">Производство <br> печатных плат</span>
         </a>
         <a class="services__link  services__link-installation" href="#">
-          <img srcset="
-              img/service-second-desktop@1x.webp 1x,
-              img/service-second-desktop@2x.webp 2x" src="img/service-second-desktop@1x.webp" width="370" height="620" alt="Монтаж печатных плат">
+          <picture>
+            <source srcset="img/service-second-desktop@1x.webp 1x, img/service-second-desktop@2x.webp 2x" type="image/webp">
+            <img src="img/service-second-desktop@1x.png" width="370" height="620" alt="Монтаж печатных плат">
+          </picture>
           <span class="services__text">Монтаж печатных <br> плат</span>
         </a>
         <a class="services__link  services__link-accessories" href="#">
-          <img srcset="
-              img/service-third-desktop@1x.webp 1x,
-              img/service-third-desktop@2x.webp 2x" src="img/service-third-desktop@1x.webp" width="370" height="620" alt="Комплектующие для светотехники">
+          <picture>
+            <source srcset="img/service-third-desktop@1x.webp 1x, img/service-third-desktop@2x.webp 2x" type="image/webp">
+            <img src="img/service-third-desktop@1x.png" width="370" height="620" alt="Комплектующие для светотехники">
+          </picture>
           <span class="services__text">Комплектующие <br> для светотехники</span>
         </a>
       </div>

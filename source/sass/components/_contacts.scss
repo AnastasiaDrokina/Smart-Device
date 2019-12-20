@@ -6,13 +6,13 @@
 }
 
 .contacts__container {
-  background: url("../img/paper-airplane-desktop@1x.webp") left 118px top 69px no-repeat transparent;
+  background: url("../img/paper-airplane-desktop@1x.png") left 118px top 69px no-repeat transparent;
   background-size: 511px 288px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contacts__container {
-    background-image: url("../img/paper-airplane-desktop@2x.webp");
+    background-image: url("../img/paper-airplane-desktop@2x.png");
   }
 }
 
